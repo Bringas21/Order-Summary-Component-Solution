@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100vh;
+    background: url('./images/pattern-background-desktop.svg') no-repeat center/cover;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.img-banner{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-bottom: 20px;
+}
+
+.title{
+    font-weight: 900;
+    font-size: 26px;
+    padding: 20px 0;
+    color: hsl(223, 47%, 23%);
+}
+
+.description{
+    font-size: 14px;
+    padding: 0 35px 15px 35px;
+    text-align: center;
+    line-height: 22px;
+    color: hsl(224, 23%, 55%);
+}
+
+.plan{
+    display: flex;
+    background-color: hsl(225, 100%, 98%);
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 20px;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 14px;
+
+}
+
+.left{
+    display: flex;
+    padding: 18px 0 18px 18px;
+}
+
+.music-icon{
+    height: 44px;
+    padding-right: 18px;
+}
+
+.plan-price{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 4px;
+}
+
+.plan-type{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+.plan-price{
+    color: hsl(224, 23%, 55%);
+}
+
+.plan-change{
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+    font-weight: 700;
+    padding-right: 18px;
+}
+
+.plan-change:hover{
+    text-decoration: none;
+    cursor: pointer;
+    color: #766df0;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    row-gap: 18px;
+    font-size: 14px;
+}
+
+.btn-payment{
+    background-color: hsl(245, 75%, 52%);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    border-radius: 8px;
+}
+
+.btn-payment:hover{
+    background-color: #766df0;
+    cursor: pointer;
+}
+
+.btn-cancel{
+    margin-bottom: 30px;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+}
+
+.btn-cancel:hover{
+    color: hsl(223, 47%, 23%);
+    cursor: pointer;
+}
+
+@media (max-width: 376px){
+    .card{
+        width: 345px;
+    }
+}
